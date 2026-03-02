@@ -41,11 +41,6 @@ class HomePageRouteProviderPlugin extends AbstractRouteProviderPlugin
         return $routeCollection;
     }
 
-    /**
-     * @param \Spryker\Yves\Router\Route\RouteCollection $routeCollection
-     *
-     * @return \Spryker\Yves\Router\Route\RouteCollection
-     */
     protected function addHomeRoute(RouteCollection $routeCollection): RouteCollection
     {
         $route = $this->buildRoute('/', 'HomePage', 'Index', 'indexAction');
